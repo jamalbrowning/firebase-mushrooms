@@ -12,6 +12,8 @@ import authData from './helpers/data/authData';
  * see a login button if we are not logged in
  * see a logout button if we are logged in
  * see a list of mushrooms (like a forest!) if we are loggied in
+ * on load, if youre logged in
+ * show all the mushrooms in the forest
  */
 const init = () => {
   firebase.initializeApp(apiKeys.firebaseConfig);
