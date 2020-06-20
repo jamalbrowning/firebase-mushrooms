@@ -3,7 +3,7 @@ import apiKeys from './helpers/apiKeys.json';
 
 import '../styles/main.scss';
 import auth from './components/auth/auth';
-import myNavBar from './components/myNavBar/myNavBar'
+import myNavBar from './components/myNavBar/myNavBar';
 import authData from './helpers/data/authData';
 
 /**
@@ -19,6 +19,5 @@ const init = () => {
   auth.loginButton();
   myNavBar.logoutEvent();
 };
-
 
 init();
