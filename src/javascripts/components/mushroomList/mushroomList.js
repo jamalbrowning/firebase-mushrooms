@@ -1,4 +1,4 @@
-import mushroomData from '../../helpers/data/mushroomData'
+import mushroomData from '../../helpers/data/mushroomData';
 // import utils from '../../helpers/utils';
 
 /**
@@ -7,12 +7,12 @@ import mushroomData from '../../helpers/data/mushroomData'
  * printtodom
  */
 
- const buildForest = () => {
-   mushroomData.getMushrooms()
-   .then((response) => console.warn('get mushrroms worked', response.data))
-   .catch((err) => console.error('get muishrooms broke '));
-  // const domString = '<h1>I see mushrooms!!</h1>'
-  // utils.printToDom('#forest', domString);
- };
+const buildForest = () => {
+  mushroomData.getMushrooms()
+    .then((mushrooms) => console.warn('get mushrroms worked', mushrooms))
+    .catch((err) => console.error('get muishrooms broke ', err));
+// const domString = '<h1>I see mushrooms!!</h1>'
+// utils.printToDom('#forest', domString);
+};
 
- export default { buildForest };
+export default { buildForest };
